@@ -11,4 +11,5 @@ public:
 
 private:
 	Bird* bird;
+	BackGround* backGround;
 };

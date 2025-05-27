@@ -12,21 +12,27 @@ TextureScene::TextureScene()
 
 	bird = new Bird();
 	bird->SetLocalPosition(CENTER);
+	
+	backGround = new BackGround();
+
 }
 
 TextureScene::~TextureScene()
 {
 	//delete quad;	
 	delete bird;
+	delete backGround;
 }
 
 void TextureScene::Update()
 {
 	bird->Update();
+	backGround->Update();
 }
 
 void TextureScene::Render()
 {
+	backGround->Render();
 	//quad->Render();
 	bird->Render();
 }

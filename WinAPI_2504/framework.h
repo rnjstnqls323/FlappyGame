@@ -3,8 +3,8 @@
 #include "targetver.h"
 #define WIN32_LEAN_AND_MEAN
 
-#define SCREEN_WIDTH 1280
-#define SCREEN_HEIGHT 720
+#define SCREEN_WIDTH 720
+#define SCREEN_HEIGHT 960
 
 #define CENTER_X (SCREEN_WIDTH >> 1)
 #define CENTER_Y (SCREEN_HEIGHT >> 1)
@@ -96,6 +96,7 @@ typedef XMFLOAT4X4 Float4x4;
 #include "Objects/Manger/EventManager.h"
 
 #include "Objects/Flappy/Bird.h"
+#include "Objects/BackGround/BackGround.h"
 
 #include "Scenes/Scene.h"
 #include "Framework/Manager/SceneManager.h"
