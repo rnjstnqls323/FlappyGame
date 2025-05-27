@@ -25,6 +25,9 @@ public:
 	void SetLocalPosition(float x, float y) { localPosition = { x, y }; }
 	void SetLocalPosition(Vector2 pos) { this->localPosition = pos; }
 
+	void SetRotationZ(float rot) { localRotation.z = rot; }
+	void SetScale(Vector2 scale) { localScale = scale; }
+
 	void SetPivot(float x, float y) { pivot = { x, y }; }
 
 	void SetParent(Transform* transform) { parent = transform; }

@@ -1,6 +1,8 @@
 #include "Framework.h"
 
-#include "Scenes/TextureScene.h"
+#include "Scenes/PlayScene.h"
+#include "Scenes/StartScene.h"
+#include "Scenes/EndScene.h"
 
 GameManager::GameManager()
 {
@@ -9,9 +11,12 @@ GameManager::GameManager()
 	//SCENE->AddScene("Game", new TutorialScene());	
 	//SCENE->AddScene("Game", new ShootingScene());
 	//SCENE->AddScene("Game", new CollisionScene());
-	SCENE->AddScene("Game", new TextureScene());
+	SCENE->AddScene("Start", new StartScene());
+	SCENE->AddScene("Game", new PlayScene());
+	SCENE->AddScene("GameOver", new EndScene());
 
-	SCENE->ChangeScene("Game");
+
+	SCENE->ChangeScene("Start");
 }
 
 GameManager::~GameManager()

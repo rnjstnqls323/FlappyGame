@@ -96,7 +96,15 @@ typedef XMFLOAT4X4 Float4x4;
 #include "Objects/Manger/EventManager.h"
 
 #include "Objects/Flappy/Bird.h"
+
 #include "Objects/BackGround/BackGround.h"
+#include "Objects/BackGround/Ground.h"
+
+#include "Objects/Pipe/Pipe.h"
+#include "Objects/Pipe/UpPipe.h"
+#include "Objects/Pipe/DownPipe.h"
+#include "Objects/Pipe/PipeManager.h"
+
 
 #include "Scenes/Scene.h"
 #include "Framework/Manager/SceneManager.h"

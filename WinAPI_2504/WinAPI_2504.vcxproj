@@ -164,6 +164,11 @@
     <ClInclude Include="Framework\Utilities\Timer.h" />
     <ClInclude Include="Framework\Utilities\Utility.h" />
     <ClInclude Include="Objects\BackGround\BackGround.h" />
+    <ClInclude Include="Objects\BackGround\Ground.h" />
+    <ClInclude Include="Objects\Pipe\DownPipe.h" />
+    <ClInclude Include="Objects\Pipe\Pipe.h" />
+    <ClInclude Include="Objects\Pipe\PipeManager.h" />
+    <ClInclude Include="Objects\Pipe\UpPipe.h" />
     <ClInclude Include="Objects\Basic\GameObject.h" />
     <ClInclude Include="Objects\Basic\Quad.h" />
     <ClInclude Include="Objects\Collider\CircleCollider.h" />
@@ -177,7 +182,6 @@
     <ClInclude Include="Scenes\PlayScene.h" />
     <ClInclude Include="Scenes\Scene.h" />
     <ClInclude Include="Scenes\StartScene.h" />
-    <ClInclude Include="Scenes\TextureScene.h" />
     <ClInclude Include="targetver.h" />
     <ClInclude Include="WinAPI_2504.h" />
   </ItemGroup>
@@ -204,6 +208,7 @@
     <ClCompile Include="Framework\Utilities\Timer.cpp" />
     <ClCompile Include="Framework\Utilities\Utility.cpp" />
     <ClCompile Include="Objects\BackGround\BackGround.cpp" />
+    <ClCompile Include="Objects\BackGround\Ground.cpp" />
     <ClCompile Include="Objects\Basic\GameObject.cpp" />
     <ClCompile Include="Objects\Basic\Quad.cpp" />
     <ClCompile Include="Objects\Collider\CircleCollider.cpp" />
@@ -212,10 +217,13 @@
     <ClCompile Include="Objects\Flappy\Bird.cpp" />
     <ClCompile Include="Objects\Manger\DataManager.cpp" />
     <ClCompile Include="Objects\Manger\EventManager.cpp" />
+    <ClCompile Include="Objects\Pipe\DownPipe.cpp" />
+    <ClCompile Include="Objects\Pipe\Pipe.cpp" />
+    <ClCompile Include="Objects\Pipe\PipeManager.cpp" />
+    <ClCompile Include="Objects\Pipe\UpPipe.cpp" />
     <ClCompile Include="Scenes\EndScene.cpp" />
     <ClCompile Include="Scenes\PlayScene.cpp" />
     <ClCompile Include="Scenes\StartScene.cpp" />
-    <ClCompile Include="Scenes\TextureScene.cpp" />
     <ClCompile Include="WinAPI_2504.cpp" />
   </ItemGroup>
   <ItemGroup>
