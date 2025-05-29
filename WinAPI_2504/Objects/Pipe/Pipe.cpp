@@ -22,5 +22,5 @@ void Pipe::Update()
 void Pipe::Render()
 {
 	pipe->Render();
-	RectCollider::Render();
+	//RectCollider::Render();
 }

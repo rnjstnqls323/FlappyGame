@@ -31,7 +31,7 @@ void Ground::Render()
 	{
 		frame->Render();
 	}
-	RectCollider::Render();
+	//RectCollider::Render();
 }
 
 void Ground::BirdCollision(Bird* bird)

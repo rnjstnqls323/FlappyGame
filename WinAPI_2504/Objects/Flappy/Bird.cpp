@@ -41,6 +41,8 @@ void Bird::StartUpdate()
 
 void Bird::BirdDie()
 {
+	if (isDead)
+		return;
 	//각도 돌리기
 	for (Quad* frame : frames)
 	{
@@ -87,6 +89,8 @@ void Bird::CreateFrames()
 
 void Bird::CheckRotTime()
 {
+	if (isDead)
+		return;
 	rotTimer += DELTA;
 	if (rotTimer > ROT_TIME)
 	{

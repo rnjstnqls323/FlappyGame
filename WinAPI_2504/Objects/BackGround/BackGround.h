@@ -1,6 +1,6 @@
 #pragma once
 
-class BackGround : public RectCollider
+class BackGround //: public RectCollider
 {
 
 private:

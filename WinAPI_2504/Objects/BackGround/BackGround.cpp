@@ -1,10 +1,10 @@
 #include "Framework.h"
 #include "BackGround.h"
 
-BackGround::BackGround():RectCollider(Vector2(SCREEN_WIDTH,SCREEN_HEIGHT))
+BackGround::BackGround()//:RectCollider(Vector2(SCREEN_WIDTH,SCREEN_HEIGHT))
 {
-	SetLocalPosition(CENTER);
-	UpdateWorld();
+	//SetLocalPosition(CENTER);
+	//UpdateWorld();
 
 	CreateFrames();
 	

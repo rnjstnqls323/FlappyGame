@@ -79,7 +79,7 @@ void PipeManager::SetPipe()
 		if (pipe->IsActive())
 			continue;
 		pipe->SetActive(true);
-		pipe->SetLocalPosition({ SCREEN_WIDTH,(float)randNum });
+		pipe->SetLocalPosition({ SCREEN_WIDTH+pipe->Size().x,(float)randNum});
 		break;
 	}
 	for (DownPipe*& pipe : downPipes)
@@ -88,7 +88,7 @@ void PipeManager::SetPipe()
 			continue;
 		pipe->SetActive(true);
 		float pipeSizeY = pipe->Size().y;
-		pipe->SetLocalPosition({ SCREEN_WIDTH,(float)randNum+SPACE_AREA+ pipeSizeY });
+		pipe->SetLocalPosition({ SCREEN_WIDTH+pipe->Size().x,(float)randNum+SPACE_AREA+ pipeSizeY });
 		break;
 	}
 }

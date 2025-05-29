@@ -5,7 +5,7 @@ class PipeManager : public Singleton<PipeManager>
 	friend class Singleton;
 
 private:
-	const int SPACE_AREA = 250;
+	const int SPACE_AREA = 200;
 	const int PIPE_POOL_SIZE = 10;
 	const float SPEED = 100.0f;
 
